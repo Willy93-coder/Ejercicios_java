@@ -5,8 +5,14 @@ public class CelsiusFarenheit {
         Scanner lectorGrados = new Scanner(System.in);
         System.out.println("Introduce los grados celsius que quieras convertir a grados Farenheit");
         double gradosCelsius = lectorGrados.nextDouble();
-        double gradosFarenheit = (gradosCelsius *1.8) + 32;
 
-        System.out.println(gradosCelsius + " grados celsius son " + gradosFarenheit + " grados Farenheit");
+        double resultado = gradosFarenheit(gradosCelsius);
+        System.out.println(gradosCelsius + " grados celsius son " + resultado + " grados Farenheit");
+    }
+
+    public static double gradosFarenheit(double celsius){
+        double gradosFarenheit = (celsius *1.8) + 32;
+
+        return gradosFarenheit;
     }
 }
